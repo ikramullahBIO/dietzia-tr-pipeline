@@ -1,0 +1,13 @@
+key,strain,species,country,year,isolation_source,assembly_level,type_material,clade_dos_santos
+GCA_001659785.1,ID05-A0528,Dietzia timorensis,Indonesia,2010,soil under mahogany trees,Complete Genome,yes,unassigned
+GCA_002999155.1,W5195,Dietzia sp. oral taxon 368,United Kingdom,2000,Tooth root canal,Complete Genome,,B
+GCA_003052165.1,JS16-p6b,Dietzia sp. JS16-p6b,China,2016,oil filed,Complete Genome,,D
+GCA_003096075.1,YIM 80766,Dietzia lutea,Egypt,2008,,Complete Genome,yes,unassigned
+GCA_003096095.1,ILA-1,Dietzia psychralcaliphila,Japan,2002,,Complete Genome,yes,unassigned
+GCA_009740915.1,DQ12-45-1b,Dietzia sp. DQ12-45-1b,China,2009,product water in oilfield,Complete Genome,,D
+GCA_024125715.1,313,Dietzia kunjamensis,Belarus,2018,water from a container for water evaporation,Complete Genome,,A
+GCA_045016705.1,BIM B-2035,Dietzia kunjamensis,Belarus,2023,moss extract,Complete Genome,,A
+GCA_045689975.1,IITR165,Dietzia kunjamensis,India,2019,,Complete Genome,,A
+GCA_051994785.1,MNB45,Dietzia sp. MNB45,China,2020,deep-sea ferromanganese nodule,Complete Genome,,A
+GCA_055568915.1,NBRC 15801,Dietzia maris,China,2025,purchased from the NBRC,Complete Genome,yes,
+GCA_057176965.1,F01_MAG_16,Dietzia aerolata,Czechia,2022,stool from farm floor,Complete Genome,,

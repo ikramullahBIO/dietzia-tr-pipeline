@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this pipeline, please cite it as below."
+title: "dietzia-tr-pipeline: tandem-repeat discovery and coding-sequence length-difference classification in Dietzia"
+abstract: >-
+  Two linked pipelines. The first discovers variable-number tandem-repeat loci
+  in bacterial genomes and selects a discriminatory MLVA panel. The second
+  pairs orthologous coding sequences between a reference genome and its
+  nearest neighbours and assigns every length difference to a mechanism:
+  tandem-repeat copy-number change, alternative start or stop codon,
+  insertion-sequence activity, internal duplication, or an unresolved residual.
+authors:
+  - family-names: Ullah
+    given-names: Ikram
+    affiliation: "Institute for Integrative Biology of the Cell (I2BC), Universite Paris-Saclay"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # add once you have one
+license: MIT
+repository-code: "https://github.com/USERNAME/dietzia-tr-pipeline"
+keywords:
+  - tandem repeats
+  - VNTR
+  - MLVA
+  - comparative genomics
+  - Dietzia
+  - coding sequence length variation

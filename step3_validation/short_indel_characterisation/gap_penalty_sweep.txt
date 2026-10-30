@@ -1,0 +1,65 @@
+pairs 822, sequences 1390
+/usr/local/lib/python3.11/dist-packages/Bio/Align/__init__.py:4412: BiopythonDeprecationWarning: The attribute 'target_end_gap_score' was renamed to 'end_insertion_score'. This was done to be consistent with the
+AlignmentCounts object returned by the .counts method of an Alignment object.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/Bio/Align/__init__.py:4412: BiopythonDeprecationWarning: The attribute 'query_end_gap_score' was renamed to 'end_deletion_score'. This was done to be consistent with the
+AlignmentCounts object returned by the .counts method of an Alignment object.
+  warnings.warn(
+  aligned 200
+  aligned 400
+  aligned 600
+  aligned 800
+classified 822 pairs, skipped 0
+
+--- the largest gap block in each pair
+extra sequence carried by: {'neighbour': 396, 'reference': 426}
+size bp: median 16, mean 81.9, max 3518
+a multiple of three: 621 of 822 (75.5%)
+
+--- size of the largest block, in codons
+  1 codon        139   16.9%
+  2 codons        91   11.1%
+  3 codons        61    7.4%
+  4 codons        59    7.2%
+  5 codons        65    7.9%
+  6-10 codons    151   18.4%
+  11-20 codons   116   14.1%
+  >20 codons     140   17.0%
+
+--- what the block is
+  tandem duplication of the adjacent sequence :   97   11.8%
+  itself a repeated short motif               :   10    1.2%
+  homopolymer run                             :    2    0.2%
+  either of the first two (repeat-like)       :  100   12.2%
+  no repeat signature                         :  722   87.8%
+
+--- repeat-like blocks by unit length
+   1 bp unit :   2
+   3 bp unit :  78
+   6 bp unit :   9
+   9 bp unit :   3
+  12 bp unit :   3
+  15 bp unit :   5
+
+--- one clean 3 bp example per category, for the figure
+  3 bp tandem duplication  CP155437.1_185 vs CP163397.1_74  3 bp  extra in neighbour  
+  3 bp tandem duplication  CP155437.1_312 vs CP163397.1_273  -3 bp  extra in reference  
+  3 bp tandem duplication  CP155437.1_380 vs CP163397.1_343  -3 bp  extra in reference  
+  3 bp, no adjacent copy   CP155437.1_220 vs CP163397.1_179  -3 bp  extra in reference  
+  3 bp, no adjacent copy   CP155437.1_313 vs CP163397.1_274  -3 bp  extra in reference  
+  3 bp, no adjacent copy   CP155437.1_328 vs CP163397.1_289  3 bp  extra in neighbour  
+
+--- how the headline numbers move with the gap penalties
+  open  extend | single-block pairs | repeat-like among them
+   -5.0   -0.5 |  380  (46.2%)      |   87  (22.9%)
+   -5.0   -1.0 |  386  (47.0%)      |   87  (22.5%)
+   -5.0   -2.0 |  383  (46.6%)      |   89  (23.2%)
+   -7.0   -0.5 |  442  (53.8%)      |   94  (21.3%)
+   -7.0   -1.0 |  447  (54.4%)      |   97  (21.7%)
+   -7.0   -2.0 |  437  (53.2%)      |   92  (21.1%)
+  -10.0   -0.5 |  458  (55.7%)      |   92  (20.1%)
+  -10.0   -1.0 |  459  (55.8%)      |   94  (20.5%)
+  -10.0   -2.0 |  463  (56.3%)      |   94  (20.3%)
+  -14.0   -0.5 |  509  (61.9%)      |   94  (18.5%)
+  -14.0   -1.0 |  503  (61.2%)      |   95  (18.9%)
+  -14.0   -2.0 |  509  (61.9%)      |   95  (18.7%)

@@ -1,0 +1,22 @@
+# Normalise to LF in the repository and on checkout.
+#
+# Git on Windows defaults to converting LF to CRLF when checking out. A shell
+# script that lands on a Linux or WSL machine with CRLF line endings fails
+# immediately with:
+#
+#     bad interpreter: /usr/bin/env bash^M: no such file or directory
+#
+# Every driver here is a shell script meant to run on Linux, so the conversion
+# has to be switched off for this repository rather than left to each clone.
+* text=auto eol=lf
+
+*.sh  text eol=lf
+*.py  text eol=lf
+*.js  text eol=lf
+*.md  text eol=lf
+*.tsv text eol=lf
+*.csv text eol=lf
+
+*.png binary
+*.jpg binary
+*.zip binary

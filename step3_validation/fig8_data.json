@@ -1,0 +1,48 @@
+{
+ "A": {
+  "rk": "CP155437.1_2816",
+  "nk": "CP099712.1_2753",
+  "ref_aa": 427,
+  "ngb_aa": 402,
+  "ref_product": "",
+  "ngb_product": "",
+  "ident_outside": [
+   381,
+   382
+  ],
+  "windows": [
+   {
+    "s": 0,
+    "e": 45,
+    "ref": "MGAGAPALRAGDPATDAERRSALRRMKMVATGFLVVAGLVYLVAE",
+    "ngb": "-------------------------MKMVATGFLVVAGLVYLVAE"
+   }
+  ]
+ },
+ "B": {
+  "rk": "CP155437.1_367",
+  "nk": "CP099712.1_295",
+  "ref_aa": 373,
+  "ngb_aa": 394,
+  "ref_product": "",
+  "ngb_product": "",
+  "ident_outside": [
+   303,
+   307
+  ],
+  "windows": [
+   {
+    "s": 0,
+    "e": 41,
+    "ref": "MRTERQ---------------GAGRPGGAGDTPGSDAPAVM",
+    "ngb": "MRTERQGAGRPGGAGDTPGSDGAGRPGGAGDTPGSDAPAVM"
+   },
+   {
+    "s": 200,
+    "e": 246,
+    "ref": "LAFPLRRGLVWRRHRSELFT------VGGAGGTGGAGGTGGPAAPA",
+    "ngb": "LAFPLRRGLVWRRHRSELFTDGGASGTGGAGGTGGAGGTGGPAAPA"
+   }
+  ]
+ }
+}

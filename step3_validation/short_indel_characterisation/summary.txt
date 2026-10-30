@@ -1,0 +1,51 @@
+Unexplained CDS length differences: composition
+==============================================================
+pairs in the group                        : 822
+one gap block accounts for the difference : 447  (54.4%)
+  this fraction depends on the gap penalties (46-62%% over the grid);
+  quote counts, or fractions of all 822 pairs, not of this subset.
+
+Size of that block, in codons
+  1        126   28.2%
+  2         52   11.6%
+  3         31    6.9%
+  4         26    5.8%
+  5         28    6.3%
+  6-10      77   17.2%
+  11-20     51   11.4%
+  >20       56   12.5%
+  median 12 bp, mean 27.5 bp, max 240 bp
+  extra sequence in the neighbour 226, in the reference 221
+
+Repeat signature
+  duplicates the sequence beside it : 94
+  is itself a repeated motif        : 10
+  either                            : 97  (11.8% of all 822 pairs)
+     1 bp unit :   2
+     3 bp unit :  77
+     6 bp unit :   9
+     9 bp unit :   2
+    12 bp unit :   3
+    15 bp unit :   4
+
+One-codon differences
+  126 pairs differ by exactly one codon
+  70 of them (56%) duplicate the codon beside them
+
+Tandem context of the variable unit
+  short in-frame blocks examined : 217  (start-adjacent excluded: 172)
+    1 copy     130   59.9%
+    2 copies    26   12.0%
+    3 copies    17    7.8%
+    4 copies    21    9.7%
+    5 copies    16    7.4%
+    6 copies     7    3.2%
+  three or more copies : 61 of 217 (28.1%)
+
+Worked examples (a tandem array too short for TRF to report)
+  CP155437.1_655     vs CP163397.1_666      CGA x 6, codon 205, net 3 bp
+  CP155437.1_1823    vs CP163397.1_1849     ACG x 6, codon 206, net -3 bp
+  CP155437.1_2438    vs CP163397.1_2541     TCG x 6, codon 9, net -3 bp
+  CP155437.1_3180    vs CP163397.1_3238     CGA x 6, codon 332, net -3 bp
+  CP155437.1_1823    vs CP143297.1_1641     ACG x 6, codon 206, net -3 bp
+  CP155437.1_2438    vs CP143297.1_2252     TCG x 6, codon 9, net -3 bp

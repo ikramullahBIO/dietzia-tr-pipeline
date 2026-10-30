@@ -1,0 +1,48 @@
+short_indel_characterisation.py
+===============================
+Produces Section 3.8 of the report and its figure.
+
+Needs biopython.
+    conda activate dietzia-cds
+    pip install biopython
+
+Run everything from the folder this file is in:
+    python3 short_indel_characterisation.py
+
+Three stages, about fifteen minutes in total.
+  extract    selects the 822 pairs that match no classification criterion and
+             pulls both coding sequences        -> pairs.tsv, seqs.fna
+  classify   aligns each pair, locates the gap blocks, describes the largest
+                                                -> blocks.tsv
+  summarise  restricts to the pairs where one block explains the whole
+             difference, counts tandem context  -> summary.txt
+
+One stage at a time if you need it:
+    python3 short_indel_characterisation.py --stage summarise
+
+Sensitivity of the result to the alignment scores (about two hours):
+    python3 short_indel_characterisation.py --stage classify --sweep
+
+Expected output
+---------------
+  822 pairs, 447 with a single gap block
+  size in codons: 126 / 52 / 31 / 26 / 28 / 77 / 51 / 56
+  97 blocks with a repeat signature, 11.8% of the 822
+  126 one-codon differences, 70 duplicating the adjacent codon
+  tandem context: 130 single, 26 two, 61 three-or-more, of 217 examined
+  worked example: CP155437.1_1823, ACG x 6 at codon 206, against both neighbours
+
+The alignment scores
+--------------------
+Match +2, mismatch -3, gap open -7, gap extend -1, end gaps free. These are a
+choice, not a pipeline default, so the report says so and --sweep shows what
+depends on them. Across twelve combinations the count of single-block pairs
+moves from 380 to 509, while the count of blocks with a repeat signature stays
+between 87 and 97. Quote the second as a fraction of all 822 pairs, never as a
+fraction of the single-block subset.
+
+Redrawing the figure
+--------------------
+    python3 make_fig_indels.py
+The counts are written at the top of that script. If summarise gives different
+numbers, edit SIZES and CONTEXT to match before redrawing.

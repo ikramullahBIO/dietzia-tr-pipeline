@@ -1,0 +1,24 @@
+# genome data is fetched, never committed - see data/README.md
+data/assemblies/
+*.fna
+*.fna.gz
+*.gff
+*.gtf
+*.gbff
+
+# pipeline output
+Pipeline_v2_run/
+results/
+logs/
+*.log
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.swp
