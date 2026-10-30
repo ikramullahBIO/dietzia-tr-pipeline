@@ -14,7 +14,7 @@ authors:
     affiliation: "Institute for Integrative Biology of the Cell (I2BC), Universite Paris-Saclay"
     # orcid: "https://orcid.org/0000-0000-0000-0000"   # add once you have one
 license: MIT
-repository-code: "https://github.com/USERNAME/dietzia-tr-pipeline"
+repository-code: "https://github.com/ikramullahBIO/dietzia-tr-pipeline"
 keywords:
   - tandem repeats
   - VNTR
