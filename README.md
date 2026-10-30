@@ -146,6 +146,28 @@ numbers mean.
 See `CITATION.cff`. The internship report describing the method and results in
 full is available on request.
 
+## Authorship and provenance
+
+Not every file here was written for this internship, and the licence below
+should be read with that in mind.
+
+Written during the internship: the Step 2 coding-sequence comparison and its
+classification criteria, the Step 3 validation and figure code, and the
+consolidation of both into single step scripts.
+
+Pre-existing, from the host laboratory's toolset:
+
+- `step1_mlva_panel/04_MLVA_finder_optimized.py` - an optimised version of
+  MLVA_finder, a tool already in use in the laboratory
+- `step1_mlva_panel/01_vntr_from_trf.py` and `correction_motif_vntr.py` -
+  carry comments from their original authors
+
+Those files are included because the report's methods depend on them and
+because they are needed to re-run Step 1. Their authorship rests with the
+laboratory, not with this repository. If you intend to reuse them rather than
+simply reproduce this analysis, ask first.
+
 ## License
 
-MIT, see `LICENSE`.
+MIT, see `LICENSE` - covering the work written for this internship. See the
+provenance note above for the files that came from elsewhere.
